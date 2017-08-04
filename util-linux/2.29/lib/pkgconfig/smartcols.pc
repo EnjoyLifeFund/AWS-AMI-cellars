@@ -1,0 +1,10 @@
+prefix=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29
+exec_prefix=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29
+libdir=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29/lib
+includedir=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29/include
+
+Name: smartcols
+Description: table or tree library
+Version: 2.29.
+Cflags: -I${includedir}/libsmartcols
+Libs: -L${libdir} -lsmartcols

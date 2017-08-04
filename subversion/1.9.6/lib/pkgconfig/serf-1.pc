@@ -1,0 +1,13 @@
+SERF_MAJOR_VERSION=1
+prefix=/home/linuxbrew/.linuxbrew/Cellar/subversion/1.9.6
+exec_prefix=${prefix}
+libdir=/home/linuxbrew/.linuxbrew/Cellar/subversion/1.9.6/lib
+includedir=${prefix}/include/serf-1
+
+Name: serf
+Description: HTTP client library
+Version: 1.3.9
+Requires.private: libssl libcrypto
+Libs: -L${libdir} -lserf-${SERF_MAJOR_VERSION}
+Libs.private: /home/linuxbrew/.linuxbrew/opt/apr-util/libexec/lib/libaprutil-1.la     -lexpat /home/linuxbrew/.linuxbrew/opt/apr/libexec/lib/libapr-1.la -luuid -lrt -lcrypt  -lpthread -ldl -L/home/linuxbrew/.linuxbrew/Cellar/krb5/1.15.1/lib -Wl,--enable-new-dtags -Wl,-rpath -Wl,/home/linuxbrew/.linuxbrew/Cellar/krb5/1.15.1/lib -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lz
+Cflags: -I${includedir}

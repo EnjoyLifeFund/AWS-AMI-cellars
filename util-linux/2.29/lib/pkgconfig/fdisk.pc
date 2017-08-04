@@ -1,0 +1,11 @@
+prefix=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29
+exec_prefix=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29
+libdir=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29/lib
+includedir=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29/include
+
+Name: fdisk
+Description: fdisk library
+Version: 2.29.
+Requires.private: uuid blkid
+Cflags: -I${includedir}/libfdisk
+Libs: -L${libdir} -lfdisk

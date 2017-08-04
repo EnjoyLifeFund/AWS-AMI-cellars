@@ -1,0 +1,2 @@
+#! /bin/sh
+exec '/home/linuxbrew/.linuxbrew/Cellar/bison/3.0.4/bin/bison' -y "$@"

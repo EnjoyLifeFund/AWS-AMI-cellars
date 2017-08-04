@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -f "$HOME/.sbtconfig" ]; then
+  echo "Use of ~/.sbtconfig is deprecated, please migrate global settings to /home/linuxbrew/.linuxbrew/etc/sbtopts" >&2
+  . "$HOME/.sbtconfig"
+fi
+exec "/home/linuxbrew/.linuxbrew/Cellar/sbt/0.13.16/libexec/bin/sbt" "$@"

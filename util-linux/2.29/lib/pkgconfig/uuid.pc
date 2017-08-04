@@ -1,0 +1,11 @@
+prefix=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29
+exec_prefix=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29
+libdir=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29/lib
+includedir=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.29.
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

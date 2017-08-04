@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/home/linuxbrew/.linuxbrew/Cellar/xz/5.2.3
+exec_prefix=/home/linuxbrew/.linuxbrew/Cellar/xz/5.2.3
+libdir=/home/linuxbrew/.linuxbrew/Cellar/xz/5.2.3/lib
+includedir=/home/linuxbrew/.linuxbrew/Cellar/xz/5.2.3/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: http://tukaani.org/xz/
+Version: 5.2.3
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread 

@@ -1,0 +1,11 @@
+prefix=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29
+exec_prefix=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29
+libdir=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29/lib
+includedir=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29/include
+
+Name: mount
+Description: mount library
+Version: 2.29.
+Requires.private: blkid
+Cflags: -I${includedir}/libmount
+Libs: -L${libdir} -lmount
